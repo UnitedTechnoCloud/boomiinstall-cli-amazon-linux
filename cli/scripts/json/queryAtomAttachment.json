@@ -1,0 +1,11 @@
+{
+  "QueryFilter" :
+    {
+      "expression" : 
+        {
+          "argument" : ["${atomId}"],
+          "operator" :"LIKE",
+          "property" :"atomId"
+        }
+    }
+}
