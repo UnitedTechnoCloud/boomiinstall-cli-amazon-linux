@@ -103,8 +103,14 @@ fi
 
 if [ -z "${sharedWebURL}" ]
 then
-     export sharedWebURL="https:\/\/not-set\.com"
+     sharedWebURL="https://not-set.com"
 fi
+
+# Replace / with \/
+sharedWebURL=$(echo "$sharedWebURL" | sed 's/\//\\\//g')
+
+# Replace . with \.
+export sharedWebURL=$(echo "$sharedWebURL" | sed 's/\./\\./g')
 
 if [ -z "${serviceUserName}" ]
 then
