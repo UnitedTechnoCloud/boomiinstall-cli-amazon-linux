@@ -1,7 +1,9 @@
 {
   "atomId" : "${atomId}",
   "url" : "${url}",
-	"apiType" : "${apiType}",
-	"overrideUrl" : "${overrideUrl}",
-  "minAuth" : "${auth}"
+  "apiType" : "${apiType}",
+  "overrideUrl" : "${overrideUrl}",
+  "minAuth" : "basic",
+  "auth" : "basic", 
+  "externalHttpsPort": "443"	
 }
